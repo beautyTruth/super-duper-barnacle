@@ -21,6 +21,15 @@ body {
   overflow-x: hidden;
 }
 
+.section-heading {
+  font-size: 15rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(255, 234, 0);
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem 0.1rem rgb(255, 0, 0);
+}
+
 /* common styles */
 
 /* section 1 */
@@ -124,8 +133,243 @@ body {
 .logo i {
   color: rgba(255, 255, 0, 0.831);
   text-shadow: 0.3rem 0.3rem 0.2rem rgb(154, 205, 50),
-    -0.1rem -0.1rem 0.2rem aquamarine;
+    -0.1rem -0.1rem 0.2rem #7fffd4;
   font-size: 15rem;
   opacity: 0.9;
 }
 /* end of section 1 */
+
+/* section 2 */
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='26' height='26' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(159)'%3E%3Crect width='100%25' height='100%25' fill='rgba(99, 179, 237,1)'/%3E%3Ccircle cx='20' cy='20' r='6' stroke-width='0' fill='rgba(154, 230, 180,1)' filter='url(%23filter-doodad-1)'/%3E%3Ccircle cx='32' cy='20' r='6' stroke-width='0' fill='rgba(116, 42, 42,1)' filter='url(%23filter-doodad-2)'/%3E%3Ccircle cx='-8' cy='20' r='6' stroke-width='0' fill='rgba(116, 42, 42,1)' filter='url(%23filter-doodad-2)'/%3E%3Ccircle cx='8' cy='20' r='6' stroke-width='0' fill='rgba(116, 42, 42,1)' filter='url(%23filter-doodad-2)'/%3E%3Ccircle cx='-32' cy='20' r='6' stroke-width='0' fill='rgba(116, 42, 42,1)' filter='url(%23filter-doodad-2)'/%3E%3C/pattern%3E%3Cfilter id='filter-doodad-1'%3E%3CfeTurbulence baseFrequency='0.01 0.2' numOctaves='2' result='result1'/%3E%3CfeDisplacementMap in2='result1' scale='5' result='result2' xChannelSelector='R' yChannelSelector='G' in='SourceGraphic'/%3E%3CfeComposite in2='result2' in='SourceGraphic' operator='atop' result='compositeGraphic'/%3E%3CfeOffset in='compositeGraphic' result='fbSourceGraphic' dx='-0.5'/%3E%3C/filter%3E%3Cfilter id='filter-doodad-2'%3E%3CfeTurbulence baseFrequency='0.01 0.05' numOctaves='2' result='result1'/%3E%3CfeDisplacementMap in2='result1' scale='9' result='result2' xChannelSelector='R' yChannelSelector='G' in='SourceGraphic'/%3E%3CfeComposite in2='result2' in='SourceGraphic' operator='atop' result='compositeGraphic'/%3E%3CfeOffset in='compositeGraphic' result='fbSourceGraphic' dx='-0.9'/%3E%3C/filter%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.browns-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+  margin-bottom: 9rem;
+  margin-top: 4rem;
+}
+
+.browns {
+  width: 35rem;
+  height: 50rem;
+  background-color: rgba(238, 238, 238, 0.817);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 1rem 1rem 0.1rem rgb(106, 204, 221),
+    -1rem -1rem 0.1rem rgb(125, 248, 250);
+  transition: box-shadow 0.5s;
+}
+
+.browns:hover {
+  box-shadow: 1.5rem 1.5rem 0.1rem rgb(106, 204, 221),
+    -1.5rem -1.5rem 0.1rem rgb(125, 248, 250);
+}
+
+.browns:first-child {
+  align-self: flex-end;
+}
+
+.browns:last-child {
+  align-self: flex-start;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+  color: rgba(180, 180, 0, 0.872);
+  text-shadow: 0.2rem 0.2rem 0.1rem rgb(255, 127, 80);
+}
+
+.browns-text {
+  font-size: 1.8rem;
+  margin: 2.5rem 0;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.browns-text::first-letter {
+  margin-left: 1rem;
+}
+
+.browns-rating i {
+  font-size: 2rem;
+  color: rgb(255, 127, 80);
+}
+
+.browns-img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  margin: 2rem 0;
+  border-radius: 50%;
+}
+
+.browns-name {
+  padding: 2rem 0 0 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.browns:nth-child(2) .browns-name {
+  padding: 0;
+}
+
+.browns:nth-child(1) .browns-name {
+  transform: translateY(-0.5rem);
+}
+/* end of section 2 */
+
+/* section 3 */
+.section-3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5rem 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='12' height='12' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(204)'%3E%3Crect width='100%25' height='100%25' fill='rgba(99, 179, 237,1)'/%3E%3Cpath d='M0 20v20l13-20L20 0l-20 20zM20 20v20l13-20L40 0l-20 20z' fill='rgba(154, 230, 180,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M0 40v-20l20-20l-8 20zM20 40v-20l20-20l-8 20zM20 20v20l-20 20l10-20zM20-20v20l-20 20l10-20zM40 20v20l-20 20l10-20zM40-20v20l-20 20l10-20z' fill='rgba(116, 42, 42,1)' filter='url(%23filter-doodad-2)'/%3E%3C/pattern%3E%3Cfilter id='filter-doodad-1'%3E%3CfeTurbulence baseFrequency='0.01 0.2' numOctaves='2' result='result1'/%3E%3CfeDisplacementMap in2='result1' scale='5' result='result2' xChannelSelector='R' yChannelSelector='G' in='SourceGraphic'/%3E%3CfeComposite in2='result2' in='SourceGraphic' operator='atop' result='compositeGraphic'/%3E%3CfeOffset in='compositeGraphic' result='fbSourceGraphic' dx='-0.5'/%3E%3C/filter%3E%3Cfilter id='filter-doodad-2'%3E%3CfeTurbulence baseFrequency='0.15 0.01' numOctaves='2' result='result1'/%3E%3CfeDisplacementMap in2='result1' scale='10' result='result2' xChannelSelector='R' yChannelSelector='G' in='SourceGraphic'/%3E%3CfeComposite in2='result2' in='SourceGraphic' operator='atop' result='compositeGraphic'/%3E%3CfeOffset in='compositeGraphic' result='fbSourceGraphic' dy='-1'/%3E%3C/filter%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+}
+
+.team-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+}
+
+.team-member {
+  width: 35rem;
+  background-color: rgba(99, 179, 237, 1);
+  padding: 1rem 1rem 2rem 1rem;
+  box-shadow: 1rem 1rem 0.1rem rgb(106, 204, 221),
+    -1rem -1rem 0.1rem rgb(125, 248, 250);
+  position: relative;
+  opacity: 0.85;
+  transition: opacity 0.5s;
+}
+
+.team-member:hover {
+  opacity: 1;
+}
+
+.team-member:first-child {
+  align-self: flex-start;
+}
+.team-member:last-child {
+  align-self: flex-end;
+}
+
+.team-member-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.team-member-name {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: rgb(0, 37, 69);
+  margin-top: 2rem;
+}
+
+.team-member-name span {
+  font-size: 1.7rem;
+}
+
+.team-member-skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 2rem 0;
+}
+
+.team-member-skills li {
+  font-size: 1.7rem;
+  color: rgb(0, 14, 26);
+  font-weight: 500;
+}
+
+.projects-btn {
+  background-color: rgb(78, 156, 130);
+  color: rgb(209, 233, 254);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+.story-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: #222;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 50;
+  transition: transform 0.5s;
+}
+
+.schpadoinkle.story-btn {
+  transform: rotate(405deg);
+}
+
+.story-btn-line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: aliceblue;
+}
+
+.story {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.831);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transform: scale(0);
+  transform-origin: top right;
+  border-radius: 50rem 0 50rem 50rem;
+  transition: all 0.5s;
+}
+
+.schpadoinkle.story {
+  transform: scale(1);
+  border-radius: 0;
+}
+
+.story-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(73, 44, 0);
+  margin-bottom: 2rem;
+}
+
+.story-paragraph {
+  font-size: 1.8rem;
+  color: rgb(41, 25, 0);
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  text-indent: 2rem;
+}
+/* end of section 3 */
