@@ -583,3 +583,33 @@ html {
     margin: 5rem 0 4rem 0;
   }
 }
+
+@media (max-width: 1150px) {
+  .floating-bg {
+    top: -90vw;
+  }
+
+  .section-1-heading {
+    font-size: 5rem;
+    top: 30vw;
+    width: 60rem;
+  }
+
+  .logo i {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .floating-bg {
+    top: -75vw;
+  }
+
+  .section-1-heading {
+    top: 40vw;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+}
