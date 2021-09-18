@@ -375,3 +375,107 @@ html {
   text-indent: 2rem;
 }
 /* end of section 3 */
+
+/* section 4 */
+
+.section-4 {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(104, 211, 145,1)'/%3E%3Cpath d='M40 20L34 14L34 6L26 6L20 0L14 6L6 6L6 14L0 20L6 26L6 34L14 34L20 40L26 34L34 34L34 26z' fill='rgba(250, 240, 137,1)'/%3E%3Cpath d='M40 20L34 14L34 6L26 6L20 2L14 6L6 6L6 14L0 20L6 26L6 34L14 34L20 38L26 34L34 34L34 26z' fill='rgba(99, 179, 237,1)'/%3E%3Cpath d='M19 19L6 14v-8h8zM21 19L26 6h8v8zM19 21L6 26v8h8zM21 21L34 26v8h-8z' fill='rgba(250, 240, 137,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+}
+
+.form-container {
+  width: 80%;
+  height: 40%;
+  background-color: #7fffd4ad;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0.3rem 0.3rem 0.4rem rgba(99, 179, 237, 1),
+    -0.1rem -0.1rem 0.4rem rgba(250, 240, 137, 1);
+  border-radius: 0.5rem;
+  perspective: 100rem;
+}
+
+.form-img {
+  width: 55rem;
+  background-color: rgba(99, 179, 237, 1);
+  padding: 5rem;
+  opacity: 0.8;
+  box-shadow: -3rem 3rem 4rem #7fffd4ad;
+  border-radius: 0.5rem;
+  transform: rotateY(20deg);
+  transition: all 0.5s;
+}
+
+.form-img:hover {
+  transform: translateY(-2rem) rotateY(20deg);
+}
+
+.contact-form {
+  width: 45rem;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(99, 179, 237, 1),
+    -0.3rem -0.3rem 0.5rem rgba(250, 240, 137, 1);
+  transform: rotateY(-20deg);
+  transition: all 0.5s;
+}
+
+.contact-form:hover {
+  transform: translateY(-2rem) rotateY(-20deg);
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: inset 0.1rem 0.1rem 0.2rem #7fffd4ad,
+    inset -0.1rem -0.1rem 0.2rem #7fffd4ad;
+}
+
+.contact-form textarea {
+  max-height: 15rem;
+  min-height: 10rem;
+  max-width: 100%;
+  min-width: 70%;
+}
+
+.contact-form input[type="submit"] {
+  background-color: rgba(99, 179, 237, 1);
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: rgb(53, 133, 191);
+}
+
+.copyright {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-top: 5rem;
+  font-weight: 900;
+}
+
+.copyright .year {
+  font-weight: 900;
+}
+
+/* end of section 4 */
