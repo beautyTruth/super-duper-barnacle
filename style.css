@@ -110,7 +110,7 @@ html {
 
 .section-1-heading {
   font-size: 9rem;
-  font-family: "Righteous", cursive;
+  font-family: "Righteous", sans-serif;
   position: absolute;
   top: 18.5vw;
   left: 50%;
@@ -503,4 +503,83 @@ html {
 .scroll-up-btn:hover {
   background-color: aliceblue;
   color: aqua;
+}
+
+/* begin media queries */
+
+/* 1400 px */
+
+@media (max-width: 1400px) {
+  .floating-bg {
+    top: -100vw;
+  }
+  .section-1-heading {
+    font-size: 6rem;
+    top: 25vw;
+  }
+
+  .navbar-link {
+    font-size: 2rem;
+  }
+
+  .logo {
+    top: 30%;
+  }
+
+  .logo i {
+    font-size: 10rem;
+  }
+
+  .section-heading {
+    font-size: 8rem;
+    margin-bottom: 10rem;
+  }
+
+  .section-2 {
+    height: auto;
+  }
+
+  .section-2 .section-heading {
+    padding-top: 8rem;
+  }
+
+  .browns-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .browns {
+    margin: 5rem 10rem;
+  }
+
+  .section-3 {
+    height: auto;
+  }
+
+  .team-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    margin: 5rem 10rem;
+  }
+
+  .form-container {
+    height: 40%;
+    margin: 0;
+  }
+
+  .form-img {
+    display: none;
+  }
+
+  .contact-form {
+    transform: translateY(0);
+  }
+  .contact-form:hover {
+    transform: translateY(-1rem);
+  }
+
+  .copyright {
+    margin: 5rem 0 4rem 0;
+  }
 }
