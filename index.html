@@ -22,7 +22,7 @@
         <nav class="navbar">
           <a href="#" class="navbar-link">Browns</a>
           <a href="#" class="navbar-link">Plungers</a>
-          <a href="#" class="navbar-link">Chasers</a>
+          <a href="#chasers" class="navbar-link">Chasers</a>
           <a href="#" class="navbar-link">Contact</a>
         </nav>
         <div class="floating-bg"></div>
@@ -110,7 +110,7 @@
       <!-- end section-2 -->
 
       <!-- section-3 -->
-      <section class="section-3">
+      <section class="section-3" id="chasers">
         <h1 class="section-heading">Chasers</h1>
         <div class="team-wrapper">
           <div class="team-member">
@@ -206,6 +206,39 @@
         </div>
       </section>
       <!-- end section-3 -->
+
+      <!-- end section-4 -->
+      <section class="section-4">
+        <h1 class="section-heading">Kontakt</h1>
+        <div class="form-container">
+          <img
+            src="images/form-img.png"
+            alt="image of a cartoon mail item"
+            class="form-img"
+          />
+          <form
+            action="mailto:phil@kittycats.space"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm"
+            class="contact-form"
+          >
+            <input type="text" placeholder="your name" name="ContactName" />
+            <input type="email" placeholder="your email address" name="" />
+            <textarea
+              placeholder="your message"
+              name="your message"
+              id="#"
+            ></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+        <p class="copyright">
+          Copyright &copy; <span class="year">1997</span> kittycats.space All
+          rights reserved
+        </p>
+      </section>
+      <!-- section-4 -->
     </div>
 
     <script src="script.js"></script>
